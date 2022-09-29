@@ -3,7 +3,7 @@ Inofficial Pyton wrapper for [ProcDump - Windows Sysinternals | Microsoft Docs](
 Very easy to use:
 
 ```python
-    #
+    from PyPDump import ProcDump
     dumpfile = r"C:\MiniDumpWithFullMemoryx.dmp"
     pid = 16544
     createdump = True
@@ -15,7 +15,5 @@ Very easy to use:
             .add_own_parameter_or_option(f"{pid}")
             .add_target_file_or_folder([dumpfile])
             .run()
-        )
-
-        )
+        ))
 ```
